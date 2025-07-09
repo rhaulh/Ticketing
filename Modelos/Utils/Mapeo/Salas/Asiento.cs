@@ -1,0 +1,34 @@
+﻿using Ticketing.Modelos.Programacion;
+using Ticketing.Modelos.Utils.Identificadores;
+
+namespace Ticketing.Modelos.Utils.Mapeo.Zonificacion
+{
+    public class Asiento : BaseID
+    {
+        public int SalaId { get; set; }
+        public int CarteleraId { get; set; } 
+        public int Fila { get; set; }
+        public int Numero { get; set; }
+        public int Zona { get; set; }
+        public double Precio { get; set; }
+        public TipoAsiento Tipo { get; set; }
+        public EstadoAsiento Estado { get; set; }
+
+        public Asiento(int salaId, int carteleraId, int fila, int numero, int zona, double precio, TipoAsiento tipo, EstadoAsiento estado) :base (numero)
+        {
+            Id = salaId * 10000 + fila * 100 + numero; //UUIDs
+            SalaId = salaId;
+            CarteleraId = carteleraId;
+            Fila = fila;
+            Numero = numero;
+            Zona = zona;
+            Precio = precio;
+            Tipo = tipo;
+            Estado = estado;
+        }
+        public new string ToString()
+        {
+            return $"Asiento {Fila}-{Numero} (Zona: {Zona}, Precio: {Precio}, Tipo: {Tipo}, Estado: {Estado})";
+        }
+    }
+}
