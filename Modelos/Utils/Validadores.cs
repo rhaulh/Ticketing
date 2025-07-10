@@ -7,7 +7,7 @@ namespace Ticketing.Modelos.Utils
     {
         public static void ValidarCartelera(this Cartelera otra)
         {
-            if (otra == null || otra.Evento == null || otra.Evento.Detalles?.Duracion == null)
+            if (otra == null || otra.Evento == null || otra.Evento.Duracion == null)
             {
                 throw new ArgumentNullException(nameof(otra), "La cartelera proporcionada no es válida.");
             }
