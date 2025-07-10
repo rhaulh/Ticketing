@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Ticketing.Modelos
+namespace Ticketing.Modelos.Utils.FechasYTiempo
 {
     public interface IDuracion
     {    

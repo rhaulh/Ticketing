@@ -1,5 +1,4 @@
 ﻿using System;
-using Ticketing.Modelos.Programacion;
 
 namespace Ticketing.Modelos.Programaciones.Extensiones
 {

@@ -1,6 +1,6 @@
 ﻿using Ticketing.Modelos.Base;
 
-namespace Ticketing.Modelos
+namespace Ticketing.Modelos.Eventos
 {
     public class Formato:Item
     {

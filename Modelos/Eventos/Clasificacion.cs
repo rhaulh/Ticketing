@@ -2,7 +2,7 @@
 using Ticketing.Modelos.Base;
 using Ticketing.Modelos.Utils.Extensiones;
 
-namespace Ticketing.Modelos
+namespace Ticketing.Modelos.Eventos
 {
     public class Clasificacion:Item
     {

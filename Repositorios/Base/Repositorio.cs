@@ -1,30 +1,33 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-public class Repositorio<T> : IRepositorio<T> where T : class
+namespace Ticketing.Repositorios.Base
 {
-    private readonly List<T> _lista;
-    public Repositorio(List<T> lista)
+    public class Repositorio<T> : IRepositorio<T> where T : class
     {
-        _lista = lista;
-    }
-    public void Actualizar(T entidad)
-    {
-        var entidadOriginal = Buscar(entidad);
-    }
+        private readonly List<T> _lista;
+        public Repositorio(List<T> lista)
+        {
+            _lista = lista;
+        }
+        public void Actualizar(T entidad)
+        {
+            var entidadOriginal = Buscar(entidad);
+        }
 
-    public void Agregar(T entidad)
-    {
-       _lista.Add(entidad);
-    }
+        public void Agregar(T entidad)
+        {
+            _lista.Add(entidad);
+        }
 
-    public T Buscar(T entidad)
-    {
-        return _lista.FirstOrDefault(e => e.Equals(entidad));
-    }
+        public T Buscar(T entidad)
+        {
+            return _lista.FirstOrDefault(e => e.Equals(entidad));
+        }
 
-    public void Eliminar(T entidad)
-    {
-        _lista.Remove(entidad);
+        public void Eliminar(T entidad)
+        {
+            _lista.Remove(entidad);
+        }
     }
 }

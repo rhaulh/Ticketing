@@ -1,10 +1,10 @@
 ﻿using System;
-using System.Linq;
 using Ticketing.Modelos.Base;
+using Ticketing.Modelos.Eventos;
+using Ticketing.Modelos.Horarios;
 using Ticketing.Modelos.Salas.Zonificacion;
-using Ticketing.Modelos.Utils.Extensiones;
 using Ticketing.Modelos.Utils.FechasYTiempo;
-namespace Ticketing.Modelos.Programacion
+namespace Ticketing.Modelos.Programaciones
 {
     public class Funcion : Item
     {

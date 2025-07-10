@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.SymbolStore;
 using System.Linq;
-using Ticketing.Modelos.Programacion;
+using Ticketing.Modelos.Salas.Base;
 
 namespace Ticketing.Modelos.Salas.Zonificacion
 {

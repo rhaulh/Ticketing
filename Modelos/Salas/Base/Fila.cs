@@ -1,7 +1,7 @@
 ﻿using Ticketing.Modelos.Base;
 using Ticketing.Modelos.Salas.Zonificacion;
 
-namespace Ticketing.Modelos.Utils.Mapeo.Salas
+namespace Ticketing.Modelos.Salas.Base
 {
    public class Fila : Item
     {

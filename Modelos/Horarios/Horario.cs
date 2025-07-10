@@ -1,7 +1,7 @@
 ﻿using System;
 using Ticketing.Modelos.Horarios.Extensiones;
 
-namespace Ticketing.Modelos.Programacion
+namespace Ticketing.Modelos.Horarios
 {
     public class Horario
     {

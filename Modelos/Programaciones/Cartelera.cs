@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using Ticketing.Modelos.Utils.FechasYTiempo;
+﻿using System.Collections.Generic;
 
-namespace Ticketing.Modelos.Programacion
+namespace Ticketing.Modelos.Programaciones
 {
     public class Cartelera
     {

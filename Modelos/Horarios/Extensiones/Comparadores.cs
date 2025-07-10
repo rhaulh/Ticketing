@@ -1,6 +1,4 @@
-﻿using Ticketing.Modelos.Programacion;
-
-namespace Ticketing.Modelos.Horarios.Extensiones
+﻿namespace Ticketing.Modelos.Horarios.Extensiones
 {
     public static class Comparadores
     {

@@ -1,8 +1,5 @@
-﻿using System;
-using System.Text.RegularExpressions;
-using Ticketing.Modelos.Programacion;
+﻿using System.Text.RegularExpressions;
 using Ticketing.Modelos.Utils.Extensiones;
-
 
 namespace Ticketing.Modelos.Horarios.Extensiones
 {

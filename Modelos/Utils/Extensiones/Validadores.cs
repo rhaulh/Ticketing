@@ -1,5 +1,5 @@
 ﻿using System;
-using Ticketing.Modelos.Programacion;
+using Ticketing.Modelos.Horarios;
 
 namespace Ticketing.Modelos.Utils.Extensiones
 {

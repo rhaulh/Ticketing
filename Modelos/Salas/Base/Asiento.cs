@@ -1,7 +1,7 @@
 ﻿using Ticketing.Modelos.Base;
 using Ticketing.Modelos.Salas.Base.Enums;
 
-namespace Ticketing.Modelos.Utils.Mapeo.Zonificacion
+namespace Ticketing.Modelos.Salas.Base
 {
     public class Asiento : Item
     {

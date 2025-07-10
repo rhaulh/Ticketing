@@ -1,7 +1,7 @@
 ﻿using Ticketing.Modelos.Base;
-using Ticketing.Modelos.Eventos;
+using Ticketing.Modelos.Utils.FechasYTiempo;
 
-namespace Ticketing.Modelos
+namespace Ticketing.Modelos.Eventos
 {
     public class Evento : Item
     {

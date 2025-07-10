@@ -3,7 +3,7 @@ using Ticketing.Modelos.Base;
 using Ticketing.Modelos.Salas.Zonificacion;
 using Ticketing.Modelos.Utils.Extensiones;
 
-namespace Ticketing.Modelos.Programacion
+namespace Ticketing.Modelos.Salas.Base
 {
     public class Zona : Item
     {

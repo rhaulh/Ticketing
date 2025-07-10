@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using Ticketing.Modelos.Utils.Mapeo.Zonificacion;
+using Ticketing.Modelos.Salas.Base;
 
 namespace Ticketing.Modelos.Salas.Zonificacion
 {

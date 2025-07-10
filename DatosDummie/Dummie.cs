@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.Globalization;
 using Ticketing.Modelos;
 using Ticketing.Modelos.Eventos;
-using Ticketing.Modelos.Programacion;
-using Ticketing.Modelos.Utils.FechasYTiempo;
+using Ticketing.Modelos.Programaciones;
 
 namespace Ticketing.DatosDummie
 {
@@ -33,8 +31,7 @@ namespace Ticketing.DatosDummie
             new Funcion(eventos[0])
             {
                 Id = 1,
-                ConDescuentos = true,
-                Precio= 150.00,
+                DescuentosHabilitados = true
             },
         };
     }
