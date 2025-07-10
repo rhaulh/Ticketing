@@ -1,15 +1,15 @@
 ﻿using Ticketing.Modelos.Base;
+using Ticketing.Modelos.Programacion;
 
 namespace Ticketing.Modelos.Utils.Mapeo.Salas
 {
    public class Fila : Item
     {
-        public ListaAsientos Asientos { get; set; }
+        public Asientos Asientos { get; set; }
         public Fila():base("Fila Nueva")
         {
-            Asientos = new ListaAsientos();
         }
-        public Fila(string nombre, ListaAsientos asientos) : base($"Fila {nombre}")
+        public Fila(string nombre, Asientos asientos) : base($"Fila {nombre}")
         {
             Asientos = asientos;
         }

@@ -5,7 +5,6 @@ namespace Ticketing.Modelos.Eventos
     {
         public Genero(string nombre) : base(nombre)
         {
-            Nombre = nombre;
         }
         public Genero(string nombre, string descripcion) : base(nombre)
         {

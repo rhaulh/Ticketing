@@ -1,6 +1,5 @@
-﻿using System;
-using System.Globalization;
-using Ticketing.Modelos.Base;
+﻿using Ticketing.Modelos.Base;
+using Ticketing.Modelos.Eventos;
 
 namespace Ticketing.Modelos
 {
@@ -43,7 +42,7 @@ namespace Ticketing.Modelos
            var Detalles = new DetallesEvento(
                 "ruta/a/portada.jpg",
                 new PeriodoDeTiempo(2, 30, 0),
-                new Idioma(new CultureInfo("es_MX")),
+                new Idioma("es_MX"),
                 new Formato("Cine", "Película en formato digital"),
                 new Clasificacion("PG-13", "Apto para mayores de 13 años", 13)
             );

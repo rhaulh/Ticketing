@@ -26,6 +26,17 @@ namespace Ticketing.Modelos.Utils.Mapeo.Zonificacion
             Tipo = tipo;
             Estado = estado;
         }
+        public void Editar(Asiento asiento)
+        {
+            SalaId = asiento.SalaId;
+            CarteleraId = asiento.CarteleraId;
+            Fila = asiento.Fila;
+            Numero = asiento.Numero;
+            Zona = asiento.Zona;
+            Precio = asiento.Precio;
+            Tipo = asiento.Tipo;
+            Estado = asiento.Estado;
+        }
         public new string ToString()
         {
             return $"Asiento {Fila}-{Numero} (Zona: {Zona}, Precio: {Precio}, Tipo: {Tipo}, Estado: {Estado})";

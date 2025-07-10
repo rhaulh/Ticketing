@@ -1,6 +1,6 @@
 ﻿namespace Ticketing.Modelos.Programacion
 {
-    public enum TipAsientoMapeado
+    public enum TipAsiento
     {
        Asiento,
        Pasillo,

@@ -1,6 +1,6 @@
 ﻿namespace Ticketing.Modelos.Programacion
 {
-    public enum EstadoAsientoMapeado
+    public enum EstadoAsiento
     {
         Libre,
         Seleccionado,

@@ -5,7 +5,7 @@ namespace Ticketing.Modelos.Programaciones.Extensiones
 {
    public static class Validadores
     {
-        public static void ValidarCartelera(this Cartelera otra)
+        public static void EsCarteleraValida(this Funcion otra)
         {
             if (otra == null || otra.Evento == null || otra.Evento.Duracion == null)
             {

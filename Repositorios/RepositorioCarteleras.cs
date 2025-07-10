@@ -3,7 +3,7 @@ using System;
 using System.Linq;
 using Ticketing.Modelos.Programacion;
 
-public class RepositorioCarteleras<T> where T : Cartelera
+public class RepositorioCarteleras<T> where T : Funcion
 {
     private readonly List<T> _lista;
     public RepositorioCarteleras(List<T> lista)

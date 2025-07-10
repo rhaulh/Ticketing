@@ -14,9 +14,12 @@ namespace Ticketing.Modelos
                     : value;
             }
         }
+        public Clasificacion(string nombre,int edadMinima) : base(nombre)
+        {
+            EdadMinima = edadMinima;
+        }
         public Clasificacion(string nombre, string descripcion, int edadMinima) : base(nombre)
         {
-            Nombre = nombre;
             Descripcion = descripcion;
             EdadMinima = edadMinima;
         }
