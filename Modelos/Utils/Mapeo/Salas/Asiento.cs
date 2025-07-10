@@ -1,9 +1,9 @@
-﻿using Ticketing.Modelos.Programacion;
-using Ticketing.Modelos.Utils.Identificadores;
+﻿using Ticketing.Modelos.Base;
+using Ticketing.Modelos.Programacion;
 
 namespace Ticketing.Modelos.Utils.Mapeo.Zonificacion
 {
-    public class Asiento : BaseID
+    public class Asiento : Item
     {
         public int SalaId { get; set; }
         public int CarteleraId { get; set; } 
@@ -14,9 +14,9 @@ namespace Ticketing.Modelos.Utils.Mapeo.Zonificacion
         public TipoAsiento Tipo { get; set; }
         public EstadoAsiento Estado { get; set; }
 
-        public Asiento(int salaId, int carteleraId, int fila, int numero, int zona, double precio, TipoAsiento tipo, EstadoAsiento estado) :base (numero)
+        public Asiento(int salaId, int carteleraId, int fila, int numero, int zona, double precio, TipoAsiento tipo, EstadoAsiento estado) :base ($"Asiento {fila}-{numero}")
         {
-            Id = salaId * 10000 + fila * 100 + numero; //UUIDs
+            Id = salaId * 10000 + fila * 100 + numero; ////////////////
             SalaId = salaId;
             CarteleraId = carteleraId;
             Fila = fila;

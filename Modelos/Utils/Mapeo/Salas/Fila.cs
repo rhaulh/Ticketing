@@ -1,18 +1,17 @@
-﻿using Ticketing.Modelos.Utils.Identificadores;
-using Ticketing.Modelos.Utils.Convertidores;
+﻿using Ticketing.Modelos.Base;
+
 namespace Ticketing.Modelos.Utils.Mapeo.Salas
 {
-   public class Fila : BaseID
+   public class Fila : Item
     {
         public ListaAsientos Asientos { get; set; }
-        public Fila():base(0)
+        public Fila():base("Fila Nueva")
         {
-        }
-        public Fila(int id):base(id)
-        {
-            Id = id;
-            Nombre = $"Fila {Id.IdToString()}";
             Asientos = new ListaAsientos();
+        }
+        public Fila(string nombre, ListaAsientos asientos) : base($"Fila {nombre}")
+        {
+            Asientos = asientos;
         }
         public new string ToString()
         {

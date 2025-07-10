@@ -1,6 +1,5 @@
 ﻿using System;
 using Ticketing.Modelos.Utils.FechasYTiempo;
-using Ticketing.Modelos.Utils.Validaciones;
 
 namespace Ticketing.Modelos.Programacion
 {
@@ -29,25 +28,25 @@ namespace Ticketing.Modelos.Programacion
                    f1.EsIgualA(f2);
         }
 
-        public bool SeSolapaCon(Programacion otra)
-        {
-            if (Fecha is FechaEspecifica f1 && otra.Fecha is FechaEspecifica f2)
-            {
-                if (f1.EsIgualA(f2))
-                {
-                    f1.
-                    return inicioA < finB && inicioB < finA;
-                }
-            }
-            return false;
-        }
-        public bool EsAntesDe(Cartelera otra)
-        {
-            return Finalizacion <= otra.Programacion.Finalizacion;
-        }
-        public bool EsDespuesDe(Cartelera otra)
-        {
-            return Finalizacion >= otra.Programacion.Finalizacion;
-        }
+        //public bool SeSolapaCon(Programacion otra)
+        //{
+        //    if (Fecha is FechaEspecifica f1 && otra.Fecha is FechaEspecifica f2)
+        //    {
+        //        if (f1.EsIgualA(f2))
+        //        {
+        //            f1.
+        //            return inicioA < finB && inicioB < finA;
+        //        }
+        //    }
+        //    return false;
+        //}
+        //public bool EsAntesDe(Cartelera otra)
+        //{
+        //    return Finalizacion <= otra.Programacion.Finalizacion;
+        //}
+        //public bool EsDespuesDe(Cartelera otra)
+        //{
+        //    return Finalizacion >= otra.Programacion.Finalizacion;
+        //}
     }
 }

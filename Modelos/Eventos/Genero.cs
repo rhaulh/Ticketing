@@ -1,18 +1,17 @@
-﻿using Ticketing.Modelos.Utils.Identificadores;
-
+﻿using Ticketing.Modelos.Base;
 namespace Ticketing.Modelos.Eventos
 {
-    public class Genero:BaseID
+    public class Genero:Item
     {
-        public Genero(int id, string nombre, string descripcion) : base(id)
+        public Genero(string nombre) : base(nombre)
+        {
+            Nombre = nombre;
+        }
+        public Genero(string nombre, string descripcion) : base(nombre)
         {
             Nombre = nombre;
             Descripcion = descripcion;
         }
-        public Genero(int id) : base(id)
-        {
-            Nombre = "Desconocido";
-            Descripcion = "Género no especificado";
-        }
     }
 }
+

@@ -1,6 +1,9 @@
-﻿namespace Ticketing.Modelos.Utils.Convertidores
+﻿using System;
+using Ticketing.Modelos.Programacion;
+
+namespace Ticketing.Modelos.Utils
 {
-    public static class Extensiones   
+    public static class Convertidores
     {
         public static string IdToString(this int id)
         {

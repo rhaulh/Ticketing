@@ -1,10 +1,10 @@
-﻿using Ticketing.Modelos.Utils.Identificadores;
+﻿using Ticketing.Modelos.Base;
 
 namespace Ticketing.Modelos
 {
-    public class Formato:BaseID
+    public class Formato:Item
     {
-        public Formato(int id, string nombre, string descripcion) : base(id)
+        public Formato(string nombre, string descripcion) : base(nombre)
         {
             Nombre = nombre;
             Descripcion = descripcion;

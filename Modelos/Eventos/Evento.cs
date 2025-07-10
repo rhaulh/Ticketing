@@ -1,34 +1,51 @@
 ﻿using System;
 using System.Globalization;
-using Ticketing.Modelos.Utils.Identificadores;
+using Ticketing.Modelos.Base;
 
 namespace Ticketing.Modelos
 {
-    public class Evento : BaseID
+    public class Evento : Item
     {
-        public DetallesEvento Detalles { get; set; }
-        public Evento() : base(0) { }
-        public Evento(int id, string nombre, string descripcion, DetallesEvento detallesEvento) : base(id)
-        {
-            if (string.IsNullOrWhiteSpace(nombre))
-            {
-                throw new ArgumentException("El nombre del evento no puede estar vacío.", nameof(nombre));
-            }
-            if (string.IsNullOrWhiteSpace(descripcion))
-            {
-                throw new ArgumentException("La descripción del evento no puede estar vacía.", nameof(descripcion));
-            }
+        public string Portada { get; set; }
+        public IDuracion Duracion { get; set; }
+        public Idioma Idioma { get; set; }
+        public Formato Formato { get; set; }
+        public Clasificacion Clasificacion { get; set; }
 
+        public Evento(string nombre ) : base(nombre)
+        {
+            Nombre = nombre;
+        }
+        public Evento(string nombre, string descripcion, DetallesEvento detallesEvento) : base(nombre)
+        {
+           Descripcion = descripcion;
+        }
+        public Evento(string nombre, string descripcion, string portada, IDuracion duracion, Idioma idioma, Formato formato, Clasificacion clasificacion) : base(nombre)
+        {
+            Descripcion = descripcion;
+            Portada = portada;
+            Duracion = duracion;
+            Idioma = idioma;
+            Formato = formato;
+            Clasificacion = clasificacion;
+        }
+        public void AgregarDetalles(DetallesEvento detallesEvento)
+        {
+            Portada = detallesEvento.Portada;
+            Duracion = detallesEvento.Duracion;
+            Idioma = detallesEvento.Idioma;
+            Formato = detallesEvento.Formato;
+            Clasificacion = detallesEvento.Clasificacion;
         }
         public void ObtenerDetalles()
         {
             // Lógica para obtener los detalles del evento.
-            Detalles = new DetallesEvento(
+           var Detalles = new DetallesEvento(
                 "ruta/a/portada.jpg",
                 new PeriodoDeTiempo(2, 30, 0),
                 new Idioma(new CultureInfo("es_MX")),
-                new Formato(1, "Cine", "Película en formato digital"), //UUIDs
-                new Clasificacion(1,"PG-13", "Apto para mayores de 13 años") //UUIDs
+                new Formato("Cine", "Película en formato digital"),
+                new Clasificacion("PG-13", "Apto para mayores de 13 años", 13)
             );
             //Obtner de DB o Repositorio
 

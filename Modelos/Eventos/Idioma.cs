@@ -1,14 +1,14 @@
 ﻿using System.Globalization;
+using Ticketing.Modelos.Base;
 
 namespace Ticketing.Modelos
 {
-    public class Idioma
+    public class Idioma : Item
     {
-        public CultureInfo Nombre { get; set; }
-        public Idioma(CultureInfo nombre)
+        public CultureInfo Cultura { get; set; }
+        public Idioma(CultureInfo cultura) : base(cultura.Name)
         {
-            Nombre = nombre;
+            Cultura = cultura;
         }
-
     }
 }

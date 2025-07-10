@@ -25,7 +25,6 @@ namespace Ticketing.Modelos.Utils.FechasYTiempo
             Fecha = fecha;
         }
     }
-
    public sealed class FechaEspecifica : FechaAsignada, IFecha
     {
         public FechaEspecifica(int dia, int mes, int año) : base(dia, mes, año)
