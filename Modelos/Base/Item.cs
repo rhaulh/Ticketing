@@ -1,5 +1,5 @@
 ﻿using System;
-using Ticketing.Modelos.Utils;
+using Ticketing.Modelos.Utils.Extensiones;
 
 namespace Ticketing.Modelos.Base
 {

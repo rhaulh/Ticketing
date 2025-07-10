@@ -1,6 +1,6 @@
 ﻿using System;
 using Ticketing.Modelos.Base;
-using Ticketing.Modelos.Utils;
+using Ticketing.Modelos.Utils.Extensiones;
 namespace Ticketing.Modelos.Programacion
 {
     public class Cartelera : Item

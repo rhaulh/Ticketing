@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using Ticketing.Modelos.Programacion;
-using Ticketing.Modelos.Utils;
+using Ticketing.Modelos.Utils.Extensiones;
 
 
 namespace Ticketing.Modelos.Horarios.Extensiones

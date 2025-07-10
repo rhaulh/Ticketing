@@ -1,17 +1,10 @@
 ﻿using System;
 using Ticketing.Modelos.Programacion;
 
-namespace Ticketing.Modelos.Utils
+namespace Ticketing.Modelos.Utils.Extensiones
 {
     public static class Validadores
     {
-        public static void ValidarCartelera(this Cartelera otra)
-        {
-            if (otra == null || otra.Evento == null || otra.Evento.Duracion == null)
-            {
-                throw new ArgumentNullException(nameof(otra), "La cartelera proporcionada no es válida.");
-            }
-        }
         public static bool EsStringNula(this string valor,string nombreVariable)
         {
             if (string.IsNullOrWhiteSpace(valor))

@@ -1,7 +1,4 @@
-﻿using System;
-using Ticketing.Modelos.Programacion;
-
-namespace Ticketing.Modelos.Utils
+﻿namespace Ticketing.Modelos.Utils.Extensiones
 {
     public static class Convertidores
     {
