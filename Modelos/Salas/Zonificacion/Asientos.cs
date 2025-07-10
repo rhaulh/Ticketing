@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Ticketing.Modelos.Utils.Mapeo.Zonificacion;
 
-namespace Ticketing.Modelos.Programacion
+namespace Ticketing.Modelos.Salas.Zonificacion
 {
     public class Asientos
     {

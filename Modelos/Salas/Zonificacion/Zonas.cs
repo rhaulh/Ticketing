@@ -1,19 +1,22 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.SymbolStore;
 using System.Linq;
+using Ticketing.Modelos.Programacion;
 
-namespace Ticketing.Modelos.Programacion
+namespace Ticketing.Modelos.Salas.Zonificacion
 {
     public class Zonas
     {
         private readonly List<Zona> _lista = new List<Zona>();
         public List<Zona> Lista => _lista;
+
+        public bool EsZonaUnica => Cantidad == 1;
         public int Cantidad => Lista?.Count ?? 0;
 
         public Zonas(List<Zona> zonas)
         {
-            Lista = zonas ?? throw new ArgumentNullException(nameof(zonas), "Las zonas por asientos no pueden ser nulas.");
+            _lista = zonas ?? throw new ArgumentNullException(nameof(zonas), "Las zonas por asientos no pueden ser nulas.");
         }
 
         public void Agregar(Zona zona)

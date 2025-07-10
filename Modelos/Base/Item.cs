@@ -25,7 +25,6 @@ namespace Ticketing.Modelos.Base
                     : value;
             } 
         }
-
         public Item(string nombre)
         {       
             Nombre = nombre.EsStringNula(nameof(nombre)) 

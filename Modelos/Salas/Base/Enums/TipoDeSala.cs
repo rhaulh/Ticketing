@@ -1,4 +1,4 @@
-﻿namespace Ticketing.Modelos.Utils.Mapeo.Salas
+﻿namespace Ticketing.Modelos.Salas.Base.Enums
 {
     public enum TipoDeSala
     {

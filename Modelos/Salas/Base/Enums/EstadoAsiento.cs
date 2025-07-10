@@ -1,4 +1,4 @@
-﻿namespace Ticketing.Modelos.Programacion
+﻿namespace Ticketing.Modelos.Salas.Base.Enums
 {
     public enum EstadoAsiento
     {

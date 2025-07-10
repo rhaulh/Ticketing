@@ -1,5 +1,5 @@
 ﻿using Ticketing.Modelos.Base;
-using Ticketing.Modelos.Programacion;
+using Ticketing.Modelos.Salas.Base.Enums;
 
 namespace Ticketing.Modelos.Utils.Mapeo.Zonificacion
 {
